@@ -12,16 +12,44 @@ Ele já vem configurado com:
 
 A ideia é: sempre que precisar iniciar um novo projeto, basta **clonar este repositório** e começar a desenvolver.
 
-
 ## ✅ Requisitos
 
-Antes de rodar o projeto, você precisa ter instalado:
+Antes de rodar o projeto, você precisa ter um ambiente de desenvolvimento configurado.
+
+### 🖥️ Ambiente local
+
+Recomenda-se usar um pacote como XAMPP, Laragon ou Docker, que já inclui:
 
 - PHP 8.2+
+- MySQL (ou MariaDB)
+- Servidor web (Apache ou Nginx)
+
+### 📦 Dependências obrigatórias
+
+Além do ambiente local, você precisa ter instalado:
+
 - Composer
-- Node.js + NPM
-- MySQL (ou outro banco configurado)
+- Node.js
+- NPM
 - Git
+
+Você pode verificar se está tudo instalado com:
+
+```bash
+php -v
+composer -V
+node -v
+npm -v
+git -v
+```
+
+### 🗄️ Banco de Dados
+
+- MySQL ou MariaDB
+- Gerenciado via:
+  - phpMyAdmin (XAMPP/Laragon)
+  - MySQL Workbench
+  - Outro gerenciador de sua preferência
 
 ## 📥 Instalação do Projeto
 
@@ -30,6 +58,7 @@ Clone o repositório:
 ```bash
 git clone https://github.com/Kaique-GM/laravel-base-project.git
 ```
+
 Entre na pasta do projeto:
 
 ```bash
@@ -57,6 +86,7 @@ cp .env.example .env
 ```
 
 Agora gere a chave da aplicação:
+
 ```bash
 php artisan key:generate
 ```
@@ -103,6 +133,7 @@ npm run dev
 ```
 
 Agora acesse:
+
 ```bash
 http://127.0.0.1:8000
 ```
@@ -119,7 +150,7 @@ npm run build
 
 O projeto já vem com:
 
- - Layout global em: ```resources/views/layouts/app.blade.php ```
+- Layout global em: ```resources/views/layouts/app.blade.php```
 
 - Componentes Livewire globais:
 
@@ -127,8 +158,8 @@ O projeto já vem com:
 
   - Footer: ```app/Livewire/Components/Footer.php```
 
--  Página inicial:
-   -  Home: ```app/Livewire/Home.php```
+- Página inicial:
+  - Home: ```app/Livewire/Home.php```
   
 ## 💡 Como usar este projeto como template
 
@@ -142,7 +173,7 @@ Para criar um novo projeto usando este como base:
 rm -rf .git
 ```
 
- 4. Crie um novo repositório e inicie o git:
+ 1. Crie um novo repositório e inicie o git:
 
 ```bash
 git init
@@ -152,12 +183,10 @@ git commit -m "Initial commit"
 
 ## 📌 Tecnologias usadas
 
-
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 ![Livewire](https://img.shields.io/badge/Livewire-4E56A6?style=for-the-badge&logo=livewire&logoColor=white)
 ![Tailwind_CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-
 
 ## 📄 Licença
 
