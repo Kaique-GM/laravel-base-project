@@ -4,6 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição aqui">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Projeto Base">
+    <meta property="og:description" content="Descrição aqui">
+    <meta property="og:image" content="https://seusite.com/images/printbanner.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="icon" href="/favicon.ico">
 
     <title>{{ $title ?? 'Meu Projeto' }}</title>
 
